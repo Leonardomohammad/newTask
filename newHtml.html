@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+
+<link rel="stylesheet" href="style.css">
+<style>
+        .pp{color: black;
+    background-color: white;
+    margin-top: 70px;}
+   
+    #socialMedia{ 
+    display: flex;
+    justify-content: space-evenly;
+
+    }
+    footer{
+
+    
+    h2{
+    font-size: xx-large;
+    width: auot;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 4px gray;}
+
+        ul{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0px;
+        }
+        img{
+            
+    display: inline;
+    max-width: 30px;
+    max-height: 30px;
+    border-radius: 5px;
+        }
+        i:hover{
+            transform: scale(1.5);
+
+        }
+        a{
+                /* left: 50%; */
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        }
+        a:hover{
+            background-color:yellow;
+            cursor: pointer;
+        }
+    }
+ .icons{ 
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    height: auto;
+    width: 40px;
+    text-align: center;
+    
+    margin-top: 3px;
+ }
+ .icons:hover{
+    transition: all 0.9s ease;
+    transform: scale(1.3);
+    
+    background-color:yellow;
+            transform:scale(1.3);
+            cursor:pointer;
+ }
+.reveal{
+        position: relative;
+        transform: translateY(30px);
+        opacity: 0;
+        transition: 0.8s all ease;
+      }
+      
+      .reveal.active{
+        transform: translateY(0);
+        opacity: 1;
+      }
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-div {
+
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 4px gray;
+}
+
+.video-div:nth-child(odd) {
+    background-color: yellow;
+    color: black;
+}
+
+.video-div h3,
+.video-div p {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    
+    color: black;
+    border: 3px yellow solid;
+}
+
+.video-div:hover {
+    
+    transform: scale(1.1);
+}
+
+.video-div:hover h3,
+.video-div:hover p {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+    /* *::after,
+    *::before {
+        box-sizing: border-box;
+    }
+    
+    ::selection {
+        background-color: grey;
+        color: white;
+    }
+    
+    ::-moz-selection {
+        background-color: grey;
+        color: white;
+    } */
+    /* 
+    @import url("https://use.typekit.net/euz1eqv.css"); */
+  
+footer{
+    background-color:black;
+    color:white;
+     }
+
+
+
+
+
+    html {
+        background: #fff;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+    }
+   
+    body {
+        overflow-x: hidden;
+        margin:0px;
+        width:100vw;
+        height:100vh;
+    background-color:white;
+    }
+    
+    header {
+      
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 90px;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+
+    background-position: center top;
+    background-size: auto 200px;
+    background-repeat: repeat-x;
+    /* background-color: ghostwhite; */
+  
+        .inner {
+            max-width: 1060px;
+            margin: 0 auto;
+            display: flex;
+            height: 70px;
+            align-items: center;
+            /* justify-content: center; */
+            position: relative;
+        }
+    
+        .logo {
+            .logo {
+    display: block;
+    /* width: 76px; */
+    position: absolute;
+    top: 0;
+    /* left: 10px; */
+    background-color: transparent;
+    text-align: center;
+    
+    width: 50px;
+    margin-top: 10px;
+    height: 50px;
+    border-radius: 5px;
+}
+            /* display: block;
+            width: 76px;
+            height: 90px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: white;
+            text-align: center; */
+    
+            .fa {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 50px;
+    -moz-osx-font-smoothing: grayscale;
+}
+            img {
+          
+    margin-left: 5px;
+    width: 60px;
+    margin-top: 10px;
+    height: 90%;
+    border-radius: 5px;  }
+        }
+    
+        nav {
+            display: none;
+    
+            a {
+              
+    font-family: 'Arial', serif;
+    font-size: 19px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 18px;
+    border: black 3px solid;
+    border-radius: 5px;
+    
+    transform: translate(0%, 0%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+   
+
+             &:hover {
+                    color: white;
+                    cursor: pointer;
+                    background-color: black;
+                    transform: scale(1.1);
+                
+    border: yellow 3px solid;
+                }
+            }
+    
+            @media screen and (min-width: 940px) {
+                display: block;
+            }
+        }
+    
+        .burger {
+            display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding-left: 30px;
+           color:white;
+
+    
+            @media screen and (min-width: 940px) {
+                display: none;
+             
+            }
+        }
+        .burger:hover{
+            cursor: pointer;
+            transform:scale(1.1);
+  
+        }
+.insideBurger{
+position:fixed;
+top:90px;
+right:0px;
+
+background-color:transparent;
+    display: flex;
+    flex-flow: column wrap;
+ height:50vh;
+ width:40vw;
+    /* transform: translate(0, -100%);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
+        /* .insideBurger--active {
+    transform: translate(0, 0);
+} */
+.nav__link {
+    /* background-color:rgb(247, 185, 105); */
+    display: flex;
+    justify-content: end;
+
+    align-items: center;
+    border: 2px solid white;
+    /* position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0; */
+    text-decoration: none;
+    font-size: 24px;
+    background: #2b3033;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+&:hover {
+    border: solid 2px blanchedalmond;
+                    color: white;
+                    cursor: pointer;
+                    background-color:black;
+                }
+
+            }
+    
+    }
+
+    .section{
+height:100vh;
+width:100vw;
+margin:0px;
+    }
+    .section-1{    background-image: url(/images/web.jpg);
+    background-size: cover;
+    
+    background-position:center;
+    background-repeat:no-repeat;
+    color:white !important;
+
+    }
+    #myVideo{
+     height:100vh;
+     width:auto;
+     object-fit: contain;
+    }
+    .content {
+
+        text-align: center;
+    position: absolute;
+    top: 25vh;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 200px
+}
+
+.section-1-test{
+    height: 40px;
+    width: 90%;
+    /* margin: 15px; */
+    /* margin-top: -15px; */
+    /* margin-left: 20%; */
+    /* border: solid 2px blanchedalmond; */
+    /* color: white; */
+    cursor: pointer;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.section-1-text-1{
+    img{
+        
+    margin-top: -20px;
+    height: 90%;
+    border-radius: 5px;
+
+    }
+}
+
+.section2Div{
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+h2, h3 {
+    text-transform: capitalize;
+    margin: 40px 0 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.thumbnail-slider-list a > span {
+    display: block;
+    max-height: 100%;
+    width:200px;
+    height:305px;
+    overflow: hidden;
+    border: 1px solid rgba(211, 211, 211, .7);
+    border-radius: 4px;
+    background-color: rgba(211, 211, 211, 0.25);
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, .01), rgba(0, 0, 0, .1));
+}
+#sectinoVideo{
+    width:200px;
+}
+.videoContent{
+    width:200px;
+    height:150px;
+
+    p{
+font-size:large;
+color:white;
+
+
+    }
+}
+.videoContentSign{ 
+       position: relative;
+    margin-left: 30%;
+    color: rgb(255 238 8);
+    background-color: black;
+    font-size: 30px;
+    border-radius: 50%;
+    width: 50px;
+    height: 60px;
+    padding-left: 20px;
+}
+.programmingDivStyle{
+
+    position:relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 0px;
+}
+    .ContentSign{
+        background-color: black;
+    color: rgb(255 238 8);
+    width: 45px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-top: 20px;
+    }
+    .ContentSign:hover{
+      color: black;
+    background-color: rgb(255 238 8);
+
+    }
+    .section3Div{
+        height:90vh;
+        width:90vw;
+        margin-left:5vw;
+
+        display:grid;
+        grid-template-areas: 
+        'left left right right'
+        'left left right right'
+        'left left middle middle'
+        
+        'bottom bottom middle middle'
+        'bottom bottom middle middle';
+        grid-gap: 10px;
+        .div1{
+    cursor: pointer;        
+    transition: transform 0.3s ease;
+grid-area:left;
+
+border-radius: 10px;
+
+box-shadow: 2px 2px 5px 4px gray;
+    height: 300px;
+    width: 50vw;
+    
+    background-image:url('/images/lastNews.jpg');
+        
+        background-size:cover;
+        background-position:center;
+
+       div{
+
+    
+            transform: translate(0%, 0%);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        }
+.div1:hover{
+    
+    transform: scale(1.1);
+}
+.div1:hover div{
+    
+    opacity: 1;
+    /* transform: translate(-50%, -50%); */
+}
+        .div2{
+    cursor: pointer;        
+            
+            background-color:black;
+            grid-area:right;
+            
+    border-radius: 10px;
+    
+    box-shadow: 2px 2px 5px 4px gray;
+    
+    background-image:url('/images/newsPaper.jpg');
+        
+        background-size:cover;
+        background-position:center;
+    height: 200px;
+    width: 40vw;
+    
+    div{
+
+    
+transform: translate(0%, 0%);
+opacity: 0;
+transition: opacity 0.3s ease, transform 0.3s ease;
+}
+        }
+        .div2:hover{
+    
+    transform: scale(1.1);
+}
+.div2:hover div{
+    
+    opacity: 1;
+    /* transform: translate(-50%, -50%); */
+}
+        .div3{
+    cursor: pointer;        
+            width: 40vw;
+    height: 300px;
+            background-color:black;
+            grid-area:middle;
+            
+    border-radius: 10px;
+    
+    box-shadow: 2px 2px 5px 4px gray;
+    
+    background-image:url('/images/paper.jpg');
+        
+        background-size:cover;
+        background-position:center;
+        
+       div{
+
+    
+transform: translate(0%, 0%);
+opacity: 0;
+transition: opacity 0.3s ease, transform 0.3s ease;
+}
+    
+        }
+        .div3:hover{
+    
+    transform: scale(1.1);
+}
+.div3:hover div{
+    
+    opacity: 1;
+    /* transform: translate(-50%, -50%); */
+}       
+        .div4{
+    cursor: pointer;        
+
+            height: 200px;
+    width: 50vw;
+            grid-area:bottom;
+            
+    border-radius: 10px;
+    
+    box-shadow: 2px 2px 5px 4px gray;
+    
+    background-image:url('/images/comingSoon.jpg');
+        
+        background-size:cover;
+        background-position:center;
+        
+       div{
+
+    
+transform: translate(0%, 0%);
+opacity: 0;
+transition: opacity 0.3s ease, transform 0.3s ease;
+}
+        }
+        .div4:hover{
+    
+    transform: scale(1.1);
+}
+.div4:hover div{
+    
+    opacity: 1;
+    /* transform: translate(-50%, -50%); */
+}
+
+
+
+    }
+    @media screen and (max-width: 400px) {
+         #section-3{
+            height:auto;
+         }    
+    .section3Div{
+display:flex;
+flex-flow:column;
+height:auto;
+width:100vw;
+        .div1{
+            
+    transition: transform 0.3s ease;
+height: 70vh;
+    width: 80vw;
+    margin-left:5vw;
+        
+
+       div{
+
+    
+            transform: translate(0%, 0%);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        }
+.div1:hover{
+    
+    transform: scale(1.1);
+}
+.div1:hover div{
+    
+    opacity: 1;
+    /* transform: translate(-50%, -50%); */
+}
+        .div2{
+            
+            background-color:black;
+            
+        height: 70vh;
+    width: 80vw;
+    margin-left:5vw;
+    
+    div{
+
+    
+transform: translate(0%, 0%);
+opacity: 0;
+transition: opacity 0.3s ease, transform 0.3s ease;
+}
+        }
+        .div2:hover{
+    
+    transform: scale(1.1);
+}
+.div2:hover div{
+    
+    opacity: 1;
+    /* transform: translate(-50%, -50%); */
+}
+        .div3{    height: 70vh;
+    width: 80vw;
+    margin-left:5vw;
+            background-color:black;
+            
+        
+       div{
+
+    
+transform: translate(0%, 0%);
+opacity: 0;
+transition: opacity 0.3s ease, transform 0.3s ease;
+}
+    
+        }
+        .div3:hover{
+    
+    transform: scale(1.1);
+}
+.div3:hover div{
+    
+    opacity: 1;
+    /* transform: translate(-50%, -50%); */
+}
+        .div4{    height: 70vh;
+    width: 80vw;
+    margin-left:5vw;
+            
+        
+       div{
+
+    
+transform: translate(0%, 0%);
+opacity: 0;
+transition: opacity 0.3s ease, transform 0.3s ease;
+}
+        }
+        .div4:hover{
+    
+    transform: scale(1.1);
+}
+.div4:hover div{
+    
+    opacity: 1;
+    /* transform: translate(-50%, -50%); */
+}
+
+
+
+    }  
+    header{
+        width:100vw;
+    } 
+    .content{
+        width:100vw;
+    }
+            .section-1{    background-image: url(/images/web.jpg);
+    background-size: cover;
+    
+    background-position:center;
+    background-repeat:no-repeat;
+    color:white !important;
+
+    }
+        
+            }
+
+    .videoLastNews{
+    height: 100%;
+    min-width: 100%;
+    }
+    #div1,#div2,#div3,#div4{
+        background: rgba(0, 0, 0, 0.5);
+    color: rgb(241, 241, 241);
+    
+    }
+    .section-2,.section-3{
+        h2{
+    font-size: xx-large;
+    width: auot;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 4px gray;}
+    }
+    .section-4{
+        
+        background-image:url('/images/joinUs.jpg');
+        
+       background-size:cover;
+       background-position:center;
+       color:white;
+       h2{
+        
+    font-size: xx-large;
+    width: auot;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 4px gray;
+       }
+    }
+    .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+     color: #000; /* Default text color */
+       background-size:cover;
+       background-position:center;
+        }
+        form {
+            width: 80%;
+            max-width: 400px;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 10px;
+    background-color: rgba(255, 250, 205, 0.6);
+            color: #000;
+            margin-left:0px;
+        }
+        input[type="text"],input[type="email"], select {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+            margin-left:10%;
+            border: 3px solid black;
+            border-radius: 10px;
+            
+            transform: translate(0%, 0%);
+   
+    transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #000;
+            color: #fff;
+        }
+        button:hover {
+            background-color: #ff0; /* Change background color on hover */
+            color: #000; /* Change text color on hover */
+        }
+        @media screen and (max-width: 400px) {
+            form {
+                height: 70vh;
+    width: 80vw;
+    margin-left:2%;
+
+            }
+            .container{
+                
+            display: flex;
+            align-items: center;
+            }
+        }
+        input[type="text"]:hover,input[type="email"]:hover, select:hover{
+
+    transform: scale(1.1);
+
+        }
+        #ii{
+            position: absolute;
+    bottom: 170px;
+    left: 50%;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    height: auto;
+    width: 40px;
+    text-align: center;
+    animation: mymove 3s infinite;
+        }
+        #ii:hover{
+            background-color:yellow;
+            transform:scale(1.3);
+            cursor:pointer;
+        }
+        @keyframes mymove{
+0% {bottom:170px; background-color:white;}
+  50%{ bottom:165px; background-color:yellow;}     
+100%{bottom:170px; background-color:white;}
+ 
+}
+        
+    .videos{
+        
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    </style>
+
+
+</head>
+<body>
+
+	<header>
+		<div class="inner">
+			<div class="logo"><img src="/images/logo.jpg"></div>
+			<div class="burger">
+            <i id="click"  onclick="a()" class="fa fa-bars
+        black" ></i></div>
+                <div id="insideBurger" class="insideBurger" style="display:none;">
+                <a class="active nav__link"  onclick="scrollToTarget('section-1')">من نحن</a>
+				<a class="nav__link" onclick="scrollToTarget('section-2')">   اقسامنا</a>
+				<a class="nav__link" onclick="scrollToTarget('section-3')">اخرالاخبار</a>
+                
+				<a  class="nav__link" onclick="scrollToTarget('section-4')">    انضم الينا</a>
+				<a  class="nav__link" onclick="scrollToTarget('section-5')">  تواصل معنا</a>
+            
+            </div>
+     
+			<nav id="navv" >
+				<a class="active"  onclick="scrollToTarget('section-1')">من نحن</a>
+				<a onclick="scrollToTarget('section-2')">  اقسامنا</a>
+				<a  onclick="scrollToTarget('section-3')">اخرالاخبار</a>
+				<a  onclick="scrollToTarget('section-4')">    انضم الينا</a>
+				<a  onclick="scrollToTarget('section-5')">  تواصل معنا</a>
+            
+
+
+			</nav>
+		</div>
+	</header>
+    <main>
+        
+   
+<section id="section-1" class="section section-1">
+   
+<div class="content "  >
+
+<div class="section-1-text-1">
+
+    
+			<div class="logo" style="height: 80px;"><img src="/images/logo.jpg"></div>
+</div>
+<div class=" section-1-test section-1-text-2 ">
+
+    <i class=""></i>To Achieve Your Future Vision We Can Achieve It For You<i class=""></i>
+ 
+</div>
+    
+<div class=" section-1-test section-2-text reveal">
+
+    <i class=""></i>للاستشارات و الحلول البرمجية و التقنية و كل ما يتعلق بتكنولوجيا المعلومات و الاتصالات<i class=""></i>
+    </div>
+</div>
+    <i id='ii' class="fa fa-caret-down reveal" onclick="scrollToTarget('section-2')"></i>
+</section>
+<section id="section-2" class=" section-2">
+   
+    <h2 class="reveal">اقسامنا</h2>
+<div class="video-container ">
+    <div class="video-div" id="video1">
+        <h3 style="color:white;">البرمجيات</h3>
+<P class="pp">Read More</P>
+    </div>
+    <div class="video-div reveal" id="video2">
+        <h3 style="color:black;">المونتاج وتحرير الفيديوهات</h3>
+        <P class="pp">Read More</P>
+    </div>
+   
+    <div class="video-div reveal" id="video3">
+        <h3> التصاميم والغرافيكس</h3>
+        <P class="pp">Read More</P>
+    </div>
+    <div class="video-div reveal" id="video4">
+        <h3 style="color:white;">الدعم التقني والسوفت وير </h3>
+        <P class="pp">Read More</P>
+    </div>
+    <div class="video-div reveal" id="video5">
+        <h3 style="color:white;">التسويق الرقمي</h3>
+        <P class="pp">Read More</P>
+    </div>
+    <div class="video-div reveal" id="video6">
+        <h3 style="color:black;">مشاريع طلابية</h3>
+        <P class="pp">Read More</P>
+    </div>
+</div>
+</section>
+<section id="section-3" class="section section-3">
+    <h2 class="reveal">اخرالاخبار و الانشطة</h2>
+<div class="section3Div ">
+    <div class="div1 reveal">
+<div id="div1 " >   <h3>Video 5 Title</h3>
+    <p>Description for Video 5</p>
+
+</div>
+       
+    </div>
+    <div class="div2 reveal" >
+        <div id="div2" >
+            <h3>Video 5 Title</h3>
+            <p>Description for Video 5</p>
+        </div>
+        </div>
+    <div class="div3 reveal" >
+       <div id="div3 reveal">    <h3>Video 5 Title</h3>
+        <p>Description for Video 5</p>
+      
+</div>
+    </div>
+    
+    <div class="div4 reveal" >
+        <div id="div4" >
+            <h3>Video 5 Title</h3>
+            <p>Description for Video 5</p>
+         </div>
+    </div>
+</div>
+</section>
+
+<section id="section-4" class="section section-4">
+<h2 class="reveal">انضم الينا</h2>
+<div class="container section">
+    <form class="reveal">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="email" placeholder="Email">
+        <select> your sex
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <select>MaritalStatus
+            <option value="male">married</option>
+            <option value="female">single</option>
+            <option value="other">Other</option>
+        </select>
+
+        <button onclick="showMaritalStatus()">Submit</button>
+    </form>
+</div>
+</section>
+
+    </main>
+<footer id="section-5" class=" section-5">
+    <h2 style="color:white; text-align:center;">ContactUs</h2>
+    <div id="projectsLinks">
+    
+         <ul>
+            <div>
+                <i class="font-size:larger fa fa-phone-square"></i>+963999136824</div>
+           <a href='http://ican.aleppo@gmail.com' target="_blank"><div class="icons"><img src="/images/logo.jpg" alt=""></div></a>
+        </ul>
+
+</div>
+         <div id="socialMedia" >
+            
+<a href="https://www.facebook.com/profile.php?id=61554822892511&mibextid=vk8aRt" target="_blank" ><img src="/images/facebook.png" alt="" class="icons"></a>
+<a href="https://t.me/+8ieZrxCO-0w4M2Jh" target="_blank"><img  src="/images/telegram.png" alt="" class="icons"></a>
+<a href="https://www.instagram.com/ican.aleppo?igshid=MmVlMjlkMTBhMg==" target="_blank"><img  src="/images/instagram.jpeg" alt="" class="icons"></a>
+<a href="https://whatsapp.com/channel/0029VaGsTWj6rsQprCXMu00F" target="_blank"><img  src="/images/whatsapp.jpeg" alt="" class="icons"></a>
+<a href="https://www.youtube.com/@icanaleppo" target="_blank"><img  src="/images/youtube.png" alt="" class="icons"></a>
+
+<a href="https://www.linkedin.com/company/ican-aleppo/"><img src="/images/linkedIn.png" alt="" class="icons"></a>
+
+       
+</div>  
+    <div id="copyRights">This website is made and created by Mohammad Fared</div>
+
+    
+</footer>
+<script>
+    function showMaritalStatus() {
+        alert('send');
+    }
+</script>
+<script>
+    function scrollToTarget(element) {
+    // Get the target element
+    var targetElement = document.getElementById(element);
+
+    // Calculate the distance from the top of the page to the target element
+    var distanceToTarget = targetElement.offsetTop- 90; // You can adjust the distance here
+
+    // Scroll to the specific position
+    window.scrollTo({
+      top: distanceToTarget,
+      left:0,
+      
+      behavior: 'smooth' // Smooth scrolling animation
+    });
+
+    //
+
+   removeSideBar();
+  }
+
+let click=document.getElementById('burger');
+        let sideBar=document.getElementById('insideBurger');
+console.log('here is the click',click,sideBar);
+
+
+   function a(){
+            let sStyle=sideBar.style.display;
+
+            console.log('hello in the listener',sStyle);
+            if(sStyle=='none'){
+sideBar.style.display='block';
+
+console.log('hello in the listener',sideBar.style.display)
+            }
+            else{
+sideBar.style.display='none';
+
+            }
+
+        }
+
+       const removeSideBar=()=>{
+// console.log('hello i am being called')
+            if(sideBar.style.display!=='none'){
+sideBar.style.display='none';
+console.log('hello',sideBar.style.display);
+            }
+}
+        
+
+
+
+
+  </script>
+
+  <script>
+    function reveal() {
+ var reveals = document.querySelectorAll(".reveal");
+
+ for (var i = 0; i < reveals.length; i++) {
+   var windowHeight = window.innerHeight;
+   var elementTop = reveals[i].getBoundingClientRect().top;
+   var elementVisible = 100;
+
+   if (elementTop < windowHeight - elementVisible) {
+     reveals[i].classList.add("active");
+   } else {
+     reveals[i].classList.remove("active");
+   }
+ }
+}
+
+window.addEventListener("scroll", reveal);
+
+       </script>
+       <script >
+const showContent=(element)=>{
+   let target= document.getElementById(element);
+   console.log('mouseon target',target.style.display);
+   if(target.style.display=='none')
+   target.style.display='block';
+else
+target.style.display='none';
+
+}
+    const disableContent=(element)=>{
+        let target= document.getElementById(element);
+   if(target.style.display=='none')
+   target.style.display='block';
+else
+target.style.display='none';
+    }  
+      </script>
+      <script>
+        const videoDivs = document.querySelectorAll('.video-div');
+let indexx=['/images/videoEditing.mp4','/images/web.mp4','/images/motionGraphics.mp4','/images/software.jpg','/images/market.mp4','/images/studying.mp4']
+
+videoDivs.forEach((div, index) => {
+    
+    const video = document.createElement('video');
+    video.src = indexx[index];
+   
+    video.loop = true;
+video.className="videos"
+    div.appendChild(video);
+
+    div.addEventListener('mouseenter', () => {
+        video.play();
+    });
+
+    div.addEventListener('mouseleave', () => {
+        video.pause();
+    });
+
+    // Automatically start the first video
+    if (index === 0) {
+        video.play();
+    }
+    
+});
+      </script>
+</body>
+</html>
